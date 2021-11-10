@@ -91,7 +91,7 @@
                     <a href="editflexbootstrap.html">Tugas 3</a>
                     <a href="praktikumpweb.html">Praktikum 1</a>
                     <a href="tugas4">Tugas 4</a>
-                    <a href="prak2js">Praktikum 2</a>
+                    <a href="praktikum2">Praktikum 2</a>
                     <a href="ets2021">ETS</a>
                     <a href="greetings">Tugas PHP</a>
                 </div>
