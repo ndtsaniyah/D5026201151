@@ -40,3 +40,11 @@ Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+
+//tugas CRUD
+Route::get('/absen','AbsenController@index');
+Route::get('/absen/buat','AbsenController@buat');
+Route::post('/absen/simpan','AbsenController@simpan');
+Route::get('/absen/ubah/{id}','AbsenController@ubah');
+Route::post('/absen/update','AbsenController@update');
+Route::get('/absen/hapus/{id}','AbsenController@hapus');
