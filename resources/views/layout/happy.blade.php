@@ -108,7 +108,7 @@
         </div>
 
         <div class="col-foot">
-            <p id=hakcip> Cipta oleh <br>
+            <p id=hakcip> Hak Cipta oleh <br>
                 5026201151 - Nazriyah Deny Tsaniyah
             </p>
         </div>
