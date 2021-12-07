@@ -10,12 +10,16 @@ class AbsenController extends Controller
     //
     public function index()
     {
-    	$absen = DB::table('absen')->get();
-    	return view('absen.index',['absen' => $absen]);
+        $absen = DB::table('absen')->get();
+        return view('absen.index', ['absen' => $absen]);
     }
+    // method untuk menampilkan view form tambah absen
     public function buat()
     {
-        return view('absen.buat');
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
+
+        // memanggil view tambah
+        return view('absen.buat', ['pegawai' => $pegawai]);
     }
     public function simpan(Request $request)
     {
@@ -26,10 +30,18 @@ class AbsenController extends Controller
         ]);
         return redirect('/absen');
     }
+    // method untuk edit data absen
     public function ubah($id)
     {
+        // mengambil data absen berdasarkan id yang dipilih
         $absen = DB::table('absen')->where('ID', $id)->get();
-        return view('absen.ubah', ['absen' => $absen]);
+
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
+
+        $status = "Sedang Mengedit";
+
+        // passing data absen yang didapat ke view edit.blade.php
+        return view('absen.ubah', ['absen' => $absen, 'pegawai' => $pegawai, 'status' => $status]);
     }
     public function update(Request $request)
     {
