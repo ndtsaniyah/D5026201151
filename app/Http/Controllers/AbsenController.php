@@ -10,7 +10,12 @@ class AbsenController extends Controller
     //
     public function index()
     {
-        $absen = DB::table('absen')->get();
+        // $absen = DB::table('absen')->get();
+        $absen = DB::table('absen')
+        ->join('pegawai', 'absen.ID', '=', 'pegawai.pegawai_id')
+        ->select('absen.*', 'pegawai.pegawai_nama')
+        ->paginate(3);
+
         return view('absen.index', ['absen' => $absen]);
     }
     // method untuk menampilkan view form tambah absen

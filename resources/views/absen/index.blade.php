@@ -8,20 +8,22 @@
     <h1 id="jdl">DATA ABSEN</h1>
 </div>
 
-
-	<br/>
-	<br/>
     <div class="col-tabel">
+
+        <div class="add-btn">
+            <a href="/absen/buat/" class="btn btn-default" role="button"> + Tambah Absensi Baru</a>
+        </div><br>
+
 	<table class="table table-striped table-hover table-bordered align-middle">
 		<tr>
-			<th>ID Pegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
 			<th>Status</th>
 			<th>Opsi</th>
 		</tr>
 		@foreach($absen as $abs)
 		<tr>
-			<td>{{ $abs->IDPegawai }}</td>
+			<td>{{ $abs->pegawai_nama }}</td>
 			<td>{{ $abs->Tanggal }}</td>
 			<td>{{ $abs->Status }}</td>
 			<td>
@@ -31,10 +33,12 @@
 			</td>
 		</tr>
 		@endforeach
-        <div class="add-btn">
-            <a href="/absen/buat/" class="btn btn-default" role="button"> + Tambah Absensi Baru</a>
-        </div>
+
+
 	</table>
+    {{ $absen->links() }}
+
     </div>
+
 </div>
 @endsection

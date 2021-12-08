@@ -24,6 +24,7 @@
             font-family: 'Roboto', sans-serif;
             color: #000000
         }
+
         .col-header { grid-area: header; }
         .col-menu-pil { grid-area: menu; }
         .col-section { grid-area: main; }
@@ -99,8 +100,7 @@
             <h3 id=mnu>Menu</h3>
             <a href="/pegawai" class="btn btn-block" role="button"> Data Pegawai </a>
             <a href="/absen" class="btn btn-block" role="button"> Data Absen </a>
-            <a href="" class="btn btn-block" role="button"> Tugas Mingdep </a>
-            <a href="" class="btn btn-block" role="button"> Praktikum </a>
+            <a href="" class="btn btn-block" role="button"> "Praktikum" </a>
         </div>
         <div class="col-section">
             @section('konten')
