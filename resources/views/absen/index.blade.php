@@ -26,8 +26,6 @@
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>
-                <a href="/absen/detail/{{ $a->ID }}" class="btn btn-default" role="button">View Detail</a>
-                |
 				<a href="/absen/ubah/ {{ $a->ID }}" class="btn btn-warning" role="button">Edit</a>
 				|
 				<a href="/absen/hapus/{{ $a->ID }}" class="btn btn-danger" role="button">Delete</a>
