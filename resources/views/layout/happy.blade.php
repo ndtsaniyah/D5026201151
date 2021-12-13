@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Aplikasi Kepegawaian - @yield('title')</title>
+    <title>Aplikasi PWEB - @yield('title')</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,7 +100,7 @@
             <h3 id=mnu>Menu</h3>
             <a href="/pegawai" class="btn btn-block" role="button"> Data Pegawai </a>
             <a href="/absen" class="btn btn-block" role="button"> Data Absen </a>
-            <a href="" class="btn btn-block" role="button"> "Praktikum" </a>
+            <a href="/tas" class="btn btn-block" role="button"> Tas </a>
         </div>
         <div class="col-section">
             @section('konten')

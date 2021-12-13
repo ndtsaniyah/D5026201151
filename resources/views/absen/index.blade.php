@@ -21,15 +21,18 @@
 			<th>Status</th>
 			<th>Opsi</th>
 		</tr>
-		@foreach($absen as $abs)
+		@foreach($absen as $a)
 		<tr>
-			<td>{{ $abs->pegawai_nama }}</td>
-			<td>{{ $abs->Tanggal }}</td>
-			<td>{{ $abs->Status }}</td>
+			<td>{{ $a->pegawai_nama }}</td>
+			<td>{{ $a->Tanggal }}</td>
+			<td>{{ $a->Status }}</td>
 			<td>
-				<a href="/absen/ubah/{{ $abs->ID }}">Edit</a>
+
+                <a href="/absen/view/{{ $a->ID }}" class="btn btn-default" role="button">View Detail</a>
+                |
+				<a href="/absen/ubah/ {{ $a->ID }}" class="btn btn-warning" role="button">Edit</a>
 				|
-				<a href="/absen/hapus/{{ $abs->ID }}">Hapus</a>
+				<a href="/absen/hapus/{{ $a->ID }}" class="btn btn-danger" role="button">Delete</a>
 			</td>
 		</tr>
 		@endforeach

@@ -1,16 +1,16 @@
 @extends('layout.happy')
-@section('title', 'Data Absen')
+@section('title', 'Data Pegawai')
 
 @section('konten')
     <div class="rounded border cont-ktn">
         <br>
         <div class="judul">
-            <h1 id="jdl">TAMBAH DATA PEGAWAI</h1>
+            <h1 id="jdl">EDIT DATA PEGAWAI</h1>
         </div>
         <br><br>
 
 	@foreach($pegawai as $p)
-	<form action="/pegawai/update" method="post">
+	<form action="/tas/update" method="post">
 		{{ csrf_field() }}
 		<input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br/>
         <div class="form-body">

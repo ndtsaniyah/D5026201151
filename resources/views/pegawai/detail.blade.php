@@ -1,5 +1,5 @@
 @extends('layout.happy')
-@section('title', 'Data Absen')
+@section('title', 'Data Pegawai')
 
 @section('konten')
     <div class="rounded border cont-ktn">
