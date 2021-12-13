@@ -10,6 +10,7 @@
     <link
         href="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"
         rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo asset('css/happy.css')?>" type="text/css">
 
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -19,63 +20,6 @@
         src="http://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js">
     </script>
 
-    <Style>
-        *{
-            font-family: 'Roboto', sans-serif;
-            color: #000000
-        }
-
-        .col-header { grid-area: header; }
-        .col-menu-pil { grid-area: menu; }
-        .col-section { grid-area: main; }
-        .col-foot { grid-area: footer; }
-
-        .grid-container {
-        display: grid;
-        grid-template-areas:
-            'header header header header header header'
-            'menu main main main main main'
-            'footer footer footer footer footer footer';
-        grid-gap: 20px;
-        background-color: #1C2F35;
-        padding: 10px;
-        }
-
-        .grid-container > div {
-        background-color:#BEC7C4;
-        padding: 20px 0;
-        border-radius: 15px;
-        }
-        #jdl{
-            text-align: center;
-            font-weight: 900;
-        }
-        #mnu, #hakcip, #status{
-            text-align: center;
-
-        }
-        label{
-            font-weight: 200;
-        }
-        .form-body{
-            padding-left: 15px;
-            padding-right: 30px
-        }
-        a:visited, a:active, a:hover, a:link{
-            color: #000000;
-            text-decoration: none;
-        }
-        .submit-btn{
-            padding-left: 20rem;
-        }
-        .col-tabel{
-            padding: 15px
-        }
-        .btn-default{
-            background-color: #f2f4f8;
-        }
-
-    </Style>
 </head>
 
 <body>

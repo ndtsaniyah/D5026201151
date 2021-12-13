@@ -15,7 +15,8 @@
         <div class="form-body">
             <div class="col">
                     <div class="form-group">
-                        <label for="nama" class="col-sm-4 control-label">Nama Pegawai :</label>
+                        <label for="nama" class="col-sm-3 control-label">Nama Pegawai</label>
+                        <label for="nama" class="col-sm-1 control-label">:</label>
                         <div class='col-sm-8 input-group date' id='nama'>
                             <select class="form-control" name="IDPegawai">
                                 @foreach($pegawai as $p )
@@ -29,7 +30,8 @@
 
             <div class="col">
                     <div class="form-group">
-                        <label for="dtpickerdemo" class="col-sm-4 control-label">Tanggal :</label>
+                        <label for="dtpickerdemo" class="col-sm-3 control-label">Tanggal</label>
+                        <label for="dtpickerdemo" class="col-sm-1 control-label">:</label>
                         <div class='col-sm-8 input-group date' id='dtpickerdemo'>
                             <input type='text' class="form-control" name="Tanggal" required="required" />
                             <span class="input-group-addon">
@@ -49,7 +51,8 @@
             </div>
             <div class="col">
                     <div class="form-group">
-                        <label for="status" class="col-sm-4 control-label">Status :</label>
+                        <label for="status" class="col-sm-3 control-label">Status</label>
+                        <label for="status" class="col-sm-1 control-label">:</label>
                         <div class='col-sm-8 input-group date' id='radiopicker'>
                             <input type="radio" id="h" name="Status" value="H">
                             <label for="h">HADIR</label><br>

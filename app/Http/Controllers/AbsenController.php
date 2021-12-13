@@ -5,16 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+
 class AbsenController extends Controller
 {
-    //
     public function index()
     {
         // $absen = DB::table('absen')->get();
         $absen = DB::table('absen')
-        ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
-        ->select('absen.*', 'pegawai.pegawai_nama')
-        ->paginate(3);
+            ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
+            ->select('absen.*', 'pegawai.pegawai_nama')
+            ->paginate(3);
 
         return view('absen.index', ['absen' => $absen]);
     }

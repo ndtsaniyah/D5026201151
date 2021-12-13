@@ -19,7 +19,7 @@
 
     <div class="col-tabel">
         <div class="add-btn">
-            <a href="/pegawai/tambah" class="btn btn-default" role="button"> + Tambah Pegawai Baru</a>
+            <a href="/pegawai/tambah" class="btn btn-default" role="button"> Tambah Pegawai Baru</a>
         </div>
         <br/>
     <table class="table table-striped table-hover table-bordered align-middle">
@@ -36,7 +36,7 @@
 			<td>{{ $p->pegawai_jabatan }}</td>
 			<td>
 
-                <a href="/pegawai/detail/{{ $p->pegawai_id }}" class="btn btn-default btn-sm" role="button">View Detail</a>
+                <a href="/pegawai/detail/{{ $p->pegawai_id }}" class="btn btn-default" role="button">View Detail</a>
                 |
 				<a href="/pegawai/edit/ {{ $p->pegawai_id }}" class="btn btn-warning" role="button">Edit</a>
 				|

@@ -16,7 +16,8 @@
         <div class="form-body">
             <div class="col">
                 <div class="form-group">
-                    <label for="merk" class="col-sm-4 control-label">Merk Tas :</label>
+                    <label for="merk" class="col-sm-3 control-label">Merk Tas</label>
+                    <label for="merk" class="col-sm-1 control-label">:</label>
                         <div class='col-sm-8 input-group date' id='merk'>
                         <input type="text" class="form-control" name="merk" required="required" value="{{ $t->merktas }}"> <br/>
                         </div>
@@ -24,7 +25,8 @@
             </div>
             <div class="col">
                 <div class="form-group">
-                    <label for="stock" class="col-sm-4 control-label">Stock Tas :</label>
+                    <label for="stock" class="col-sm-3 control-label">Stock Tas</label>
+                    <label for="stock" class="col-sm-1 control-label">:</label>
                         <div class='col-sm-8 input-group date' id='stock'>
                         <input type="number" class="form-control" name="stock" required="required" value="{{ $t->stocktas }}"> <br/>
                         </div>
@@ -32,7 +34,8 @@
             </div>
             <div class="col">
                 <div class="form-group">
-                    <label for="status" class="col-sm-4 control-label">Ketersediaan :</label>
+                    <label for="ketersediaan" class="col-sm-3 control-label">Ketersediaan</label>
+                    <label for="ketersediaan" class="col-sm-1 control-label">:</label>
                     <div class='col-sm-8 input-group date' id='radiopicker'>
                         <input type="radio" id="y" name="ketersediaan" value="Y" @if($t->tersedia==='Y') checked="checked" @endif>
                         <label for="h">TERSEDIA</label><br>

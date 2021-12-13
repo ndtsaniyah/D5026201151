@@ -9,9 +9,8 @@
 </div>
 
     <div class="col-tabel">
-
         <div class="add-btn">
-            <a href="/absen/buat/" class="btn btn-default" role="button"> + Tambah Absensi Baru</a>
+            <a href="/absen/buat/" class="btn btn-default" role="button"> Tambah Absensi Baru</a>
         </div><br>
 
 	<table class="table table-striped table-hover table-bordered align-middle">
@@ -27,8 +26,7 @@
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>
-
-                <a href="/absen/view/{{ $a->ID }}" class="btn btn-default" role="button">View Detail</a>
+                <a href="/absen/detail/{{ $a->ID }}" class="btn btn-default" role="button">View Detail</a>
                 |
 				<a href="/absen/ubah/ {{ $a->ID }}" class="btn btn-warning" role="button">Edit</a>
 				|
