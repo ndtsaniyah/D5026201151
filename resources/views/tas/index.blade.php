@@ -26,14 +26,14 @@
 		<tr>
             <th>No.</th>
 			<th>Merk Tas</th>
-			<th>Stock Tas</th>
+			<th>Ketersediaan</th>
             <th>Opsi</th>
 		</tr>
 		@foreach($tas as $t)
 		<tr>
             <td>{{ $loop->iteration }}</td>
 			<td>{{ $t->merktas }}</td>
-			<td>{{ $t->stocktas }}</td>
+			<td>{{ $t->tersedia }}</td>
 			<td>
 
                 <a href="/tas/view/{{ $t->kodetas }}" class="btn btn-default" role="button">View Detail</a>
