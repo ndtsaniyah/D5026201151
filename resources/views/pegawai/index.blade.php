@@ -35,7 +35,6 @@
 			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->pegawai_jabatan }}</td>
 			<td>
-
                 <a href="/pegawai/detail/{{ $p->pegawai_id }}" class="btn btn-default" role="button">View Detail</a>
                 |
 				<a href="/pegawai/edit/ {{ $p->pegawai_id }}" class="btn btn-warning" role="button">Edit</a>

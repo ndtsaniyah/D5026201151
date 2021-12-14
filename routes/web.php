@@ -53,6 +53,8 @@ Route::post('/absen/simpan','AbsenController@simpan');
 Route::get('/absen/ubah/{id}','AbsenController@ubah');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+Route::get('/absen/cari','AbsenController@cari');
+Route::get('/absen/detail/{id}','AbsenController@view');
 
 //Tas Route
 Route::get('/tas','TasController@index');
