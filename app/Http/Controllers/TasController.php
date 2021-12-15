@@ -82,8 +82,8 @@ class TasController extends Controller
     public function view($id)
     {
         // mengambil data pegawai berdasarkan id yang dipilih
-        $pegawai = DB::table('tas')->where('kodetas', $id)->get();
+        $tas = DB::table('tas')->where('kodetas', $id)->get();
         // passing data pegawai yang didapat ke view edit.blade.php
-        return view('tas.view', ['tas' => $pegawai]);
+        return view('tas.view', ['tas' => $tas]);
     }
 }

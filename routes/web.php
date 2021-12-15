@@ -65,3 +65,10 @@ Route::post('/tas/update','TasController@update');
 Route::get('/tas/delete/{id}','TasController@delete');
 Route::get('/tas/search','TasController@search');
 Route::get('/tas/view/{id}','TasController@view');
+
+//Keranjang Route
+Route::get('/keranjang','KeranjangController@index');
+Route::get('/keranjang/add','KeranjangController@add');
+Route::post('/keranjang/store','KeranjangController@store');
+Route::get('/keranjang/delete/{id}','KeranjangController@delete');
+

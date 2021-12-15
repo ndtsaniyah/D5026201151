@@ -45,6 +45,7 @@
             <a href="/pegawai" class="btn btn-block" role="button"> Data Pegawai </a>
             <a href="/absen" class="btn btn-block" role="button"> Data Absen </a>
             <a href="/tas" class="btn btn-block" role="button"> Tas </a>
+            <a href="/keranjang" class="btn btn-block" role="button"> Keranjang Belanja </a>
         </div>
         <div class="col-section">
             @section('konten')
